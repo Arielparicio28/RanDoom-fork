@@ -1,0 +1,123 @@
+/*D E S I G N*/
+
+/*COLORS*/
+:root{
+    --black:#010101;
+    --white: #F7F7F7;
+}
+
+/*TYPOGRAPHIE*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+}
+
+/*C S S  R U L E S*/
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+/*GLOBALS*/
+html{
+    background-color: var(--white);
+}
+
+
+/*P A R T S*/
+/*HEADER*/
+header{
+    width:inherit;
+    height: 12vh;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+nav *{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 3%;
+}
+
+nav{
+    display: inline;
+}
+
+/*help*/
+img[alt=help]{
+    position: relative;
+
+}
+
+/*logo*/
+img[alt="logo"]{
+    width: 20%;
+    display: flex;
+    margin: 0 45%;
+}
+
+/*burguer*/
+img[alt="burguer"]{
+    position: relative;
+    width: 10%;
+    left: 90%;
+    margin-top: -40px;
+}
+
+/*MAIN*/
+main{
+    margin: 5%;
+}
+
+/*FOOTER*/
+footer{
+    width:inherit;
+    height: 10vh;
+    padding: 5%;
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
+/*R E S P O N S I V E*/
+@media only screen and (min-width: 600px) {
+    header nav div{
+        display: block;
+    }
+    img[alt="burguer"]{
+        display: none;
+    }
+    img[alt=help]{
+        margin-top: -23px;
+        left: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    header nav div{
+        display: none;
+    }
+    img[alt="burguer"]{
+        display: block;
+    }
+    img[alt=help]{
+        left: 80%;
+    }
+  }
