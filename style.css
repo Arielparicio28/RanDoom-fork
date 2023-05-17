@@ -12,9 +12,9 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 h1, h2, h3{
-    font-family: 'Merriweather', serif;
+    font-family: 'Shrikhand', cursive;
 }
 
 /*C S S  R U L E S*/
@@ -40,8 +40,10 @@ html{
 /*HEADER*/
 header{
     width:inherit;
-    height: 12vh;
-    background-color: var(--black);
+    height: 100vh;
+    background-image: url(assets/hero-image.png);
+    background-position: top center;
+    background-size: cover;
     color: var(--white);
 }
 
@@ -54,10 +56,16 @@ nav *{
 nav ul li{
     display: inline;
     margin: 0 3%;
+    transition: border 1s ease-in 0s;
+}
+
+nav ul li:hover{
+    border-bottom: solid 3px #F7F7F7;
 }
 
 nav{
     display: inline;
+    border-bottom: solid 1px var(--white);
 }
 
 /*help*/
@@ -80,6 +88,53 @@ img[alt="burguer"]{
     left: 90%;
     margin-top: -40px;
 }
+
+/*HERO IMAGE*/
+.hero{
+    text-align: center;
+    padding: 10%;
+}
+
+h1{
+    font-size: 70px;
+}
+
+span{
+    transition: -webkit-text-fill-color 2s ease-in-out 0s;
+}
+
+h1:hover span{
+    -webkit-text-stroke-color: var(--white);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-fill-color: transparent;
+}
+
+/*learn more*/
+img[alt="learn-more"]{
+    position: relative;
+    width: 20%;
+    left: 55%;
+    animation: 5s 0s infinite spin;
+}
+
+@keyframes spin{
+    from{
+        rotate: 1deg;
+    }
+    to {
+        rotate: 359deg;
+    }
+}
+
+img[alt="arrow"]{
+    position: relative;
+    width: 15%;
+    left: 37%;
+    top: -30px;
+}
+
+/*arrow*/
+
 
 /*MAIN*/
 main{
