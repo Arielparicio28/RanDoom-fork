@@ -56,10 +56,12 @@ li img{
 } /* logo flechas */
 
 header nav{
+    position: fixed;
     display: flex;
-    /* align-content: center;
-    justify-content: center;
-    padding: 2%; */
+    width: 100%;
+    padding: 2%;
+    background: var(--white);
+    box-shadow: ;
 }
 
 img[alt="burguer"]{
@@ -80,11 +82,16 @@ img[alt="help"]{
     text-align: center;
 }
 
+.hero h1 {
+    margin-top: 5rem;
+}
+
 .hero svg{
     border: 2px solid blue;
     position:relative;
     margin-top: -45%;
     left: 45%;
+    
 }
 
 /*MAIN*/
@@ -219,23 +226,23 @@ img[alt="balanza"]{
 }
 
 /* M E D I A  Q U E R I E S*/
-@media (min-width: 768px), screen and (orientation: portrait) {
-    img[alt="burguer"]{
-        display: none;
-    }    
-
-    /* header nav{
-        display: flex;
-    } */
-    
+@media (min-width: 768px), screen and (orientation: portrait) {  
     header nav{
-    border: 2px solid green;
+    border: 1px solid green;
     display: flex;
     align-content: center;
-    justify-content: center;
+    /* justify-content: space-between;  */
     padding: 2%;
     }
 
+    img[alt="burguer"]{
+        border: 2px solid gray;
+        display:flex;
+    }  
+
+    img[alt="help"]{
+        border: 2px solid gray;
+    }
 
     .food{
         position: absolute;
@@ -317,22 +324,20 @@ img[alt="balanza"]{
   }
 
  @media (max-width: 768px), screen and (orientation: portrait) {
+
     header nav{
-    border: 2px solid gray;
-    /* align-content: center;
-    justify-content: space-between; */
-    padding: 3%;
+        border: 2px solid gray;
+        padding: 3%;
     }
     
-    img[alt="burguer"]{
-        border: 2px solid gray;
+    /* img[alt="burguer"]{
+        border: 1px solid gray;
         display:flex;
-        margin-left: 350px;      
     }  
 
     img[alt="help"]{
-        border: 2px solid gray;
-    }  
+        border: 0px solid gray;
+    } */  
 
     .hero svg{
         display: none;
