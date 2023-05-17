@@ -126,9 +126,38 @@ main .chefs{
     padding: 5em;
 }
 
-img[alt="boat"]{
-    position: absolute;
-    top: 50%
+/*balanza*/
+img[alt="balanza"]{
+  flex: 0 0 auto;
+  height: 100px;
+  width: 150px;
+  animation: boatAnimation 2s linear infinite;
+}
+
+@keyframes boatAnimation {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(-55%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.img[alt="balanza"] {
+  flex: 0 0 auto;
+  height: 100px;
+  width: 150px;
+  background-size: cover;
+  animation: boatAnimation 2s linear infinite;
+}
+
+img[alt="balanza"]{
+    position: fixed;
+    top: 50%;
+    left: 100%;
 }
 
 .button{
