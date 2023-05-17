@@ -326,7 +326,8 @@ img[alt="balanza"]{
     
     img[alt="burguer"]{
         border: 2px solid gray;
-        display:flex;      
+        display:flex;
+        margin-left: 350px;      
     }  
 
     img[alt="help"]{
