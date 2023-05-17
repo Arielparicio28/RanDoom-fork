@@ -13,7 +13,7 @@ html{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-h1, h2, h3, .ran-doom{
+h1, h2, h3, .ran-doom, button{
     font-family: 'Yeseva One', cursive;
 }
 
@@ -33,6 +33,7 @@ a{
 /*GLOBALS*/
 html{
     background-color: var(--white);
+    overflow-x: hidden
 }
 
 
@@ -40,7 +41,6 @@ html{
 /*HEADER*/
 header{
     height: 100vh;
-    /*overflow-y: hidden*/
 }
 
 header nav ul li {
@@ -81,10 +81,64 @@ img[alt="help"]{
     left: 50%;
 }
 
-h1{
-    font-size: 100px;
-    width: 50%;
-    text-align: left;
+/*MAIN*/
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10em;
+}
+
+.button{
+    align-self: center;
+    width: 25%;
+    height: 10vh;
+
+    text-align: center;
+    background-color: var(--black);
+    border-radius: 100px;
+    border: none;
+    color: var(--white);
+    font-size: larger;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.button p{
+    margin: 21px;
+}
+
+.button:hover{
+  box-shadow: -1px 6px 62px 0px rgba(0,0,0,0.75);
+}
+
+.button:hover p{
+    animation: cambiar 1s ease-in alternate;
+  }
+
+@keyframes cambiar{
+    0%{
+        transform: translateY(-21px)
+    }
+    20%{
+        transform: translateY(-42px)
+    }
+    40%{
+        transform: translateY(-63px)
+    }
+    50%{
+        transform: translateY(-84px)
+    }
+    60%{
+        transform: translateY(-105px)
+    }
+    70%{
+        transform: translateY(-126px)
+    }
+    80%{
+        transform: translateY(-147px)
+    }
 }
 
 /* M E D I A  Q U E R I E S*/
@@ -118,6 +172,7 @@ h1{
     }
 
     img[alt="learn-more"], img[alt="arrow"]{
+        display: block;
         filter: invert(100);
         position: absolute;
         top: 60%;
@@ -133,6 +188,13 @@ h1{
     img[alt="learn-more"]{
         animation: spin 4s ease-in-out infinite;
     }
+
+    h1{
+        font-size: 100px;
+        width: 50%;
+        text-align: left;
+    }
+    
     
     @keyframes spin{
         from{
@@ -146,10 +208,22 @@ h1{
 
  @media (max-width: 480px), screen and (orientation: portrait) {
     img[alt="burguer"]{
-        display: block;
+        display: flex;
+        float: right;
+        margin-left: 80%;
     }    
 
     header nav ul{
+        display: none;
+    }
+    
+    h1{
+        font-size: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+    img[alt="learn-more"], img[alt="arrow"]{
         display: none;
     }
     
