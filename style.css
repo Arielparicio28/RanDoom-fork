@@ -84,9 +84,51 @@ img[alt="help"]{
 /*MAIN*/
 
 main{
+
+}
+
+/*chefs*/
+main .chefs{
+    height: 50vh;
+    padding: 5em;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.chefs h1{
+    font-size:xx-large;
+    margin: 1%;
+}
+
+.carousel{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.carousel img{
+    width: 20%;
+    margin: 1%;
+}
+
+/*section*/
+.healthy svg{
+    position: relative;
+    left: -40%;
+    transform: rotate(90deg);
+}
+
+/*randoomize*/
+.randoomize{
     display: flex;
     justify-content: center;
-    padding: 10em;
+    padding: 5em;
+}
+
+img[alt="boat"]{
+    position: absolute;
+    top: 50%
 }
 
 .button{
@@ -189,7 +231,7 @@ main{
         animation: spin 4s ease-in-out infinite;
     }
 
-    h1{
+    header h1{
         font-size: 100px;
         width: 50%;
         text-align: left;
@@ -204,6 +246,30 @@ main{
             rotate: 360deg;
         }
     }
+
+    .healthy h1{
+        position: relative;
+        width: 50%;
+        font-size:70px;
+        margin-top: -85%;
+        float: right;
+    
+        color: var(--black);
+    }
+    
+    .healthy p{
+        position: relative;
+        width: 50%;
+        margin-top: -72%;
+        float: right;
+    }
+    
+    .healthy img{
+        position: absolute;
+        left: -25%;
+        top: 210%;
+        display: block;
+    }
   }
 
  @media (max-width: 480px), screen and (orientation: portrait) {
@@ -217,7 +283,7 @@ main{
         display: none;
     }
     
-    h1{
+    header h1{
         font-size: 100px;
         width: 100%;
         text-align: center;
@@ -227,4 +293,28 @@ main{
         display: none;
     }
     
+    .healthy h1{
+        position: relative;
+        width: 50%;
+        font-size:58px;
+        margin-top: -85%;
+        float: right;
+        text-align: center;
+    
+        color: var(--black);
+    }
+    
+    .healthy p{
+        position: relative;
+        width: 50%;
+        margin-top: -40%;
+        float: right;
+        text-align: center;
+    }
+
+    .healthy img{
+       width: 100%;
+       position: absolute;
+       left: -50%;
+    }
   }

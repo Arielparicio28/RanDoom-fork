@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RanDoom-choose your meal!</title>
-    <link rel="icon" href="assets/random-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">    
-</head>
-<body>
+    <link rel="icon" href="assets/random-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div>
-                <ul>
-                    <li>dulce</li>
-                    <li>salado</li>
-                    <li>vegetariano</li>
-                    <li class="ran-doom">RanD<img src="assets/random-icon.png">m</li>
-                    <li>sin gluten</li>
-                    <li>sin lactosa</li>
-                    <li>vegano</li>
-                </ul>
-            </div>
-            <img src="assets/help.png" alt="help">
-            <img src="assets/burguer.png" alt="burguer">
-        </nav>
-        <div class="hero">
-            <h1>Don't know what to eat?</h1>
-            <img src="assets/learn-more.png" alt="learn-more">
-            <img src="assets/arrow.png" class="hover" alt="arrow">
-            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M19.3,-27.4C25.8,-25.8,32.4,-21.8,36.6,-15.8C40.8,-9.7,42.7,-1.7,40.2,4.8C37.7,11.2,31,16.1,24.8,19.5C18.7,22.9,13.3,24.9,7.7,26.8C2,28.8,-3.8,30.7,-8.1,28.9C-12.5,27.1,-15.4,21.4,-21.3,17.1C-27.1,12.7,-36.1,9.6,-36.8,5.2C-37.5,0.9,-30.1,-4.7,-25.1,-9.7C-20.1,-14.7,-17.5,-19,-13.8,-21.8C-10,-24.6,-5,-26,0.7,-27C6.4,-28.1,12.8,-29,19.3,-27.4Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
-            <img src="assets/food/pasta.png" class="food" alt="pasta">
-            <img src="assets/food/sushi.png" class="food" alt="sushi">
-            <img src="assets/food/toast.png" class="food" alt="toast">
+      <nav>
+        <div>
+          <ul>
+            <li>dulce</li>
+            <li>salado</li>
+            <li>vegetariano</li>
+            <li class="ran-doom">RanD<img src="assets/random-icon.png" />m</li>
+            <li>sin gluten</li>
+            <li>sin lactosa</li>
+            <li>vegano</li>
+          </ul>
         </div>
+        <img src="assets/help.png" alt="help" />
+        <img src="assets/burguer.png" alt="burguer" />
+      </nav>
+      <div class="hero">
+        <h1>Don't know what to eat?</h1>
+        <img src="assets/learn-more.png" alt="learn-more" />
+        <img src="assets/arrow.png" class="hover" alt="arrow" />
+        <svg
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+        >
+          <defs>
+            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+              <stop id="stop1" stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+              <stop
+                id="stop2"
+                stop-color="rgba(0, 0, 0, 1)"
+                offset="100%"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#sw-gradient)"
+            d="M19.3,-27.4C25.8,-25.8,32.4,-21.8,36.6,-15.8C40.8,-9.7,42.7,-1.7,40.2,4.8C37.7,11.2,31,16.1,24.8,19.5C18.7,22.9,13.3,24.9,7.7,26.8C2,28.8,-3.8,30.7,-8.1,28.9C-12.5,27.1,-15.4,21.4,-21.3,17.1C-27.1,12.7,-36.1,9.6,-36.8,5.2C-37.5,0.9,-30.1,-4.7,-25.1,-9.7C-20.1,-14.7,-17.5,-19,-13.8,-21.8C-10,-24.6,-5,-26,0.7,-27C6.4,-28.1,12.8,-29,19.3,-27.4Z"
+            width="100%"
+            height="100%"
+            transform="translate(50 50)"
+            stroke-width="0"
+            style="transition: all 0.3s ease 0s"
+            stroke="url(#sw-gradient)"
+          ></path>
+        </svg>
+        <img src="assets/food/pasta.png" class="food" alt="pasta" />
+        <img src="assets/food/sushi.png" class="food" alt="sushi" />
+        <img src="assets/food/toast.png" class="food" alt="toast" />
+      </div>
     </header>
     <main>
+      <section class="chefs">
+        <h1>Get inspired with our recipes by great chefs!</h1>
+        <div class="carousel">
+          <img src="assets/chefs/francis.png" />
+          <img src="assets/chefs/gordon.png" />
+          <img src="assets/chefs/ferran.png" />
+          <img src="assets/chefs/cristeta.png" />
+          <img src="assets/chefs/mariya.png" />
+        </div>
+      </section>
+      <section class="healthy">
+        <svg
+          id="sw-js-blob-svg"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+              <stop
+                id="stop1"
+                stop-color="rgba(87.692, 73.053, 66.125, 1)"
+                offset="0%"
+              ></stop>
+              <stop
+                id="stop2"
+                stop-color="rgba(0, 0, 0, 1)"
+                offset="100%"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#sw-gradient)"
+            d="M26,-33.2C31.1,-26.8,30.8,-16.1,30.3,-7C29.9,2,29.4,9.3,26.9,17.3C24.4,25.2,19.9,33.8,12.6,37.9C5.3,42,-4.9,41.7,-13.3,38C-21.8,34.4,-28.5,27.4,-31.5,19.5C-34.4,11.6,-33.7,2.9,-31.7,-5.2C-29.8,-13.2,-26.7,-20.7,-21.2,-27C-15.7,-33.4,-7.9,-38.6,1.3,-40.1C10.5,-41.7,21,-39.6,26,-33.2Z"
+            width="100%"
+            height="100%"
+            transform="translate(50 50)"
+            stroke-width="0"
+            style="transition: all 0.3s ease 0s"
+            stroke="url(#sw-gradient)"
+          ></path>
+        </svg>
+        <img src="assets/balanza.png" alt="boat">
+        <h1>Follow a balanced diet!</h1>
+        <p>
+          Discover the power of nutritious eating with our app that provides you
+          with a wide array of delicious and healthy recipes tailored to your
+          dietary needs. Each recipe is carefully curated to highlight its
+          nutritional value, ensuring you make the most of every bite. Whether
+          you're looking to maintain a balanced diet, lose weight, or simply
+          adopt a healthier lifestyle, our app is your ultimate culinary
+          companion.
+        </p>
+        <img src="assets/food/vegetables.png" />
+      </section>
+      <section class="randoomize">
         <div class="button">
           <p>RanDoomize!</p>
           <p>pizza!</p>
@@ -46,12 +130,12 @@
           <p>salad!</p>
           <p>sushi!</p>
         </div>
-        <div>
-            
-        </div>
+      </section>
+
+      <div></div>
     </main>
     <footer>
-        <p>©RanDoom 2023</p>
+      <p>©RanDoom 2023</p>
     </footer>
-</body>
+  </body>
 </html>
