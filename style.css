@@ -44,42 +44,47 @@ header{
 }
 
 header nav ul li {
+    border: 1px solid red;
     text-align: center;
     display: inline;
     margin: 5vh;
     font-size: 1.5vw;
-}
+} /* vista desktop */
 
 li img{
     width: 10px;
-}
+} /* logo flechas */
 
 header nav{
     display: flex;
-    align-content: center;
+    /* align-content: center;
     justify-content: center;
-    padding: 2%;
+    padding: 2%; */
 }
 
-img[alt="help"], img[alt="burguer"]{
-    width: 25px;
-    height: 25px;
-}
+img[alt="burguer"]{
+    width: 45px;
+    height: 45px;
+} /* menu icon mobile */
 
 img[alt="help"]{
-    margin-left: 5vh;
-}
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+} /* about icon mobile */
 
 /*HERO*/
 .hero{
+    border: 2px solid orange;
     padding: 5%;
     text-align: center;
 }
 
 .hero svg{
-    position: relative;
-    margin-top: -50%;
-    left: 50%;
+    border: 2px solid blue;
+    position:relative;
+    margin-top: -45%;
+    left: 45%;
 }
 
 /*MAIN*/
@@ -219,10 +224,19 @@ img[alt="balanza"]{
         display: none;
     }    
 
-    header nav{
+    /* header nav{
         display: flex;
-    }
+    } */
     
+    header nav{
+    border: 2px solid green;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 2%;
+    }
+
+
     .food{
         position: absolute;
         width: 30%;
@@ -303,11 +317,25 @@ img[alt="balanza"]{
   }
 
  @media (max-width: 768px), screen and (orientation: portrait) {
+    header nav{
+    border: 2px solid gray;
+    /* align-content: center;
+    justify-content: space-between; */
+    padding: 3%;
+    }
+    
     img[alt="burguer"]{
-        display: flex;
-        float: right;
-        margin-left: 80%;
-    }    
+        border: 2px solid gray;
+        display:flex;      
+    }  
+
+    img[alt="help"]{
+        border: 2px solid gray;
+    }  
+
+    .hero svg{
+        display: none;
+    }
 
     header nav ul{
         display: none;
