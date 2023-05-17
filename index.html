@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RanDoom-choose your meal!</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <header>
-        <img src="/assets/logo.png" alt="logo">
         <nav>
             <div>
                 <ul>
                     <li>dulce</li>
                     <li>salado</li>
                     <li>vegetariano</li>
+                    <li class="ran-doom">RanD<img src="assets/random-icon.png">m</li>
                     <li>sin gluten</li>
                     <li>sin lactosa</li>
+                    <li>vegano</li>
                 </ul>
             </div>
-            <img src="assets/icon-question.png" alt="help">
+            <img src="assets/help.png" alt="help">
             <img src="assets/burguer.png" alt="burguer">
         </nav>
         <div class="hero">
-            <h1>Know what to eat!</h1>
+            <h1>Don't know what to eat?</h1>
             <img src="assets/learn-more.png" alt="learn-more">
-            <img src="assets/arrow.png" alt="arrow">
+            <img src="assets/arrow.png" class="hover" alt="arrow">
+            <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M19.3,-27.4C25.8,-25.8,32.4,-21.8,36.6,-15.8C40.8,-9.7,42.7,-1.7,40.2,4.8C37.7,11.2,31,16.1,24.8,19.5C18.7,22.9,13.3,24.9,7.7,26.8C2,28.8,-3.8,30.7,-8.1,28.9C-12.5,27.1,-15.4,21.4,-21.3,17.1C-27.1,12.7,-36.1,9.6,-36.8,5.2C-37.5,0.9,-30.1,-4.7,-25.1,-9.7C-20.1,-14.7,-17.5,-19,-13.8,-21.8C-10,-24.6,-5,-26,0.7,-27C6.4,-28.1,12.8,-29,19.3,-27.4Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>              </svg>
+            <img src="assets/food/pasta.png" class="food" alt="pasta">
+            <img src="assets/food/sushi.png" class="food" alt="sushi">
+            <img src="assets/food/toast.png" class="food" alt="toast">
         </div>
     </header>
     <main>
