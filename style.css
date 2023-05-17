@@ -47,6 +47,7 @@ header nav ul li {
     text-align: center;
     display: inline;
     margin: 5vh;
+    font-size: 1.5vw;
 }
 
 li img{
@@ -213,7 +214,7 @@ img[alt="balanza"]{
 }
 
 /* M E D I A  Q U E R I E S*/
-@media (min-width: 480px), screen and (orientation: portrait) {
+@media (min-width: 768px), screen and (orientation: portrait) {
     img[alt="burguer"]{
         display: none;
     }    
@@ -261,7 +262,7 @@ img[alt="balanza"]{
     }
 
     header h1{
-        font-size: 100px;
+        font-size: 7vw;
         width: 50%;
         text-align: left;
     }
@@ -301,7 +302,7 @@ img[alt="balanza"]{
     }
   }
 
- @media (max-width: 480px), screen and (orientation: portrait) {
+ @media (max-width: 768px), screen and (orientation: portrait) {
     img[alt="burguer"]{
         display: flex;
         float: right;
@@ -313,7 +314,7 @@ img[alt="balanza"]{
     }
     
     header h1{
-        font-size: 100px;
+        font-size: 7vw;
         width: 100%;
         text-align: center;
     }
